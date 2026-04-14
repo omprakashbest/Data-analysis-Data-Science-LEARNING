@@ -29,3 +29,13 @@ class Solution:
                 if not grid[r][c] and (r, c) not in visit:
                     res += dfs(r, c)
         return res
+    
+sol = Solution()
+
+grid = [
+ [1,1,1,1],
+ [1,0,0,1],
+ [1,0,0,1],
+ [1,1,1,1]
+]
+print(sol.closedIsland(grid))
